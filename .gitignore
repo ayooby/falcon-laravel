@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+/public/video
+.env
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+/nbproject/private/
+composer.phar
