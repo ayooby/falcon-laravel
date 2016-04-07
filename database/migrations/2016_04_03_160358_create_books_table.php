@@ -18,6 +18,7 @@ class CreateBooksTable extends Migration
           $table->integer('author_id')->unsigned();
           $table->string('title');
           $table->text('price');
+          $table->boolean('available');
           $table->timestamps();
           $table->timestamp('release_date');
           $table->foreign('author_id')->references('id')->on('authors');
