@@ -39,7 +39,10 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapWebRoutes($router);
 
-        //
+        $router->bind('books', function($id)
+    		{
+    			return  \App\Book::findOrFail($id);
+    		});
     }
 
     /**
