@@ -6,3 +6,7 @@ Route::get('books/search', ['as'=> 'searchPage','uses' => 'BooksController@searc
 Route::get('books/get/pdf', 'BooksController@getAllPDF');
 
 Route::resource('books', 'BooksController');
+
+Route::resource('genres', 'GenresController');
+
+Route::resource('authors', 'AuthorsController');

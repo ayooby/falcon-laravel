@@ -16,11 +16,13 @@
 <div class="form-group">
 	{!! Form::label('genre_list', 'Genres:') !!}
 	{!! Form::select('genre_list[]', $genres, null, ['id' => 'genre_list', 'class' => 'form-control', 'multiple']) !!}
+	<a href="{{ action('GenresController@create') }}">New Genre</a>
 </div>
 
 <div class="form-group">
 	{!! Form::label('author', 'Author:') !!}
 	{!! Form::select('author', $authors, $author_id, ['id' => 'author', 'class' => 'form-control']) !!}
+	<a href="{{ action('AuthorsController@create') }}">New Author</a>
 </div>
 
 <div class="form-group">
